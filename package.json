@@ -1,7 +1,7 @@
 {
   "name": "reasked",
   "version": "0.1.0",
-  "description": "Official SDK for Reasked API",
+  "description": "Official Node.js SDK for the Reasked API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

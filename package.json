@@ -1,13 +1,13 @@
 {
   "name": "reasked",
   "version": "0.1.0",
-  "description": "Official Node.js SDK for the Reasked API",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "dist/reasked.js",
+  "types": "dist/reasked.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepare": "pnpm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "reasked",
@@ -19,13 +19,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "typescript": "^5.3.3",
+    "typescript": "^5.0.0",
     "jest": "^29.7.0",
     "@types/jest": "^29.5.12",
     "ts-jest": "^29.1.2"
-  },
-  "dependencies": {
-    "axios": "^1.6.7"
   },
   "files": [
     "dist",

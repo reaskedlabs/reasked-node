@@ -1,5 +1,13 @@
 {
   "name": "@reasked/node",
+  "description": "Reasked Node SDK",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reaskedlabs/reasked-node.git"
+  },
+  "homepage": "https://github.com/reaskedlabs/reasked-node",
+  "bugs": "https://github.com/reaskedlabs/reasked-node/issues",
+  "author": "Reasked <support@reasked.com>",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -22,7 +30,6 @@
     "api",
     "sdk"
   ],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.24",

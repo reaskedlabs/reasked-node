@@ -1,9 +1,16 @@
 {
-  "name": "reasked",
+  "name": "@reasked/node",
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/reasked.js",
-  "types": "dist/reasked.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",

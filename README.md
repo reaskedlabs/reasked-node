@@ -153,41 +153,6 @@ try {
 }
 ```
 
-### Custom HTTP Client
-
-For advanced use cases, you can use the HTTP client directly:
-
-```javascript
-import { HttpClient } from "@reasked/node";
-
-const client = new HttpClient("your-api-key", {
-  timeout: 10000,
-  debug: true,
-});
-
-const response = await client.get("/faq-groups/slug/getting-started");
-```
-
-### Request-Level Options
-
-Override global configuration for individual requests:
-
-```javascript
-const response = await reasked.faq.getFaqGroupBySlug(
-  "getting-started",
-  {
-    status: "published",
-  },
-  {
-    timeout: 5000,
-    retries: 1,
-    headers: {
-      "X-Custom-Header": "value",
-    },
-  }
-);
-```
-
 ## TypeScript Support
 
 The SDK is written in TypeScript and includes full type definitions:
